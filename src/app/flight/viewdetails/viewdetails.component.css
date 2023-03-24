@@ -1,0 +1,57 @@
+/* Container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card styles */
+.card {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Table styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table header styles */
+thead th {
+  font-weight: bold;
+  text-align: left;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Table body styles */
+tbody td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Button styles */
+.btn {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Edit button styles */
+.bg-info {
+  background-color: #007bff;
+}
+
+/* Delete button styles */
+.bg-danger {
+  background-color: #dc3545;
+}
+
+/* Button margin styles */
+.m-1 {
+  margin: 5px;
+}

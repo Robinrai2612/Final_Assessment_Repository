@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <div class="table-wrapper">
+        <table class="table">
+          <thead class="thead-light">
+            <tr>
+              <th>Id</th>
+              <th>Airline Name:</th>
+              <th>Flight Number</th>
+              <th>Departure AirportCode</th>
+              <th>Arrival AirportCode</th>
+              <th>Price</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let booking of bookings">
+              <td>{{ booking.id }}</td>
+              <td>{{ booking.airline }}</td>
+              <td>{{ booking.flightNumber }}</td>
+              <td>{{ booking.departureAirportCode }}</td>
+              <td>{{ booking.arrivalAirportCode }}</td>
+              <td>{{ booking.price }}</td>
+              <td>
+                <button
+                  class="btn bg bg-info m-1"
+                  (click)="editBookings(booking)"
+                >
+                  Edit
+                </button>
+                <button
+                  class="btn bg bg-danger m-1"
+                  (click)="deleteBookings(booking.id)"
+                >
+                  Delete
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

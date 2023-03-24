@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <nav class="navbar bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home"><strong>Booking Flight</strong></a>
+        <div clas="ms-auto">
+          <a class="navbar-brand" [routerLink]="['/viewdetail']">View Flight</a>
+          <a class="navbar-brand" [routerLink]="['/booking']">Book Flight</a>
+        </div>
+
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-danger" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <img
+        src="https://blog.air.irctc.co.in/wp-content/uploads/2019/11/bg.jpg"
+        height="688"
+        width="1536"
+      />
+    </div>
+  </body>
+</html>

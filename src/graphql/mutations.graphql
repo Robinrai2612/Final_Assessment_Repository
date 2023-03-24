@@ -1,0 +1,193 @@
+# this is an auto generated file. This will be overwritten
+mutation CreateFlight(
+  $input: CreateFlightInput!
+  $condition: ModelFlightConditionInput
+) {
+  createFlight(input: $input, condition: $condition) {
+    id
+    airline
+    flightNumber
+    departureAirportCode
+    arrivalAirportCode
+    price
+    bookings {
+      id
+      firstName
+      lastName
+      flight {
+        id
+        airline
+        flightNumber
+        departureAirportCode
+        arrivalAirportCode
+        price
+        createdAt
+        updatedAt
+      }
+      flightId
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateFlight(
+  $input: UpdateFlightInput!
+  $condition: ModelFlightConditionInput
+) {
+  updateFlight(input: $input, condition: $condition) {
+    id
+    airline
+    flightNumber
+    departureAirportCode
+    arrivalAirportCode
+    price
+    bookings {
+      id
+      firstName
+      lastName
+      flight {
+        id
+        airline
+        flightNumber
+        departureAirportCode
+        arrivalAirportCode
+        price
+        createdAt
+        updatedAt
+      }
+      flightId
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteFlight(
+  $input: DeleteFlightInput!
+  $condition: ModelFlightConditionInput
+) {
+  deleteFlight(input: $input, condition: $condition) {
+    id
+    airline
+    flightNumber
+    departureAirportCode
+    arrivalAirportCode
+    price
+    bookings {
+      id
+      firstName
+      lastName
+      flight {
+        id
+        airline
+        flightNumber
+        departureAirportCode
+        arrivalAirportCode
+        price
+        createdAt
+        updatedAt
+      }
+      flightId
+      createdAt
+      updatedAt
+    }
+    createdAt
+    updatedAt
+  }
+}
+mutation CreateBooking(
+  $input: CreateBookingInput!
+  $condition: ModelBookingConditionInput
+) {
+  createBooking(input: $input, condition: $condition) {
+    id
+    firstName
+    lastName
+    flight {
+      id
+      airline
+      flightNumber
+      departureAirportCode
+      arrivalAirportCode
+      price
+      bookings {
+        id
+        firstName
+        lastName
+        flightId
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+    flightId
+    createdAt
+    updatedAt
+  }
+}
+mutation UpdateBooking(
+  $input: UpdateBookingInput!
+  $condition: ModelBookingConditionInput
+) {
+  updateBooking(input: $input, condition: $condition) {
+    id
+    firstName
+    lastName
+    flight {
+      id
+      airline
+      flightNumber
+      departureAirportCode
+      arrivalAirportCode
+      price
+      bookings {
+        id
+        firstName
+        lastName
+        flightId
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+    flightId
+    createdAt
+    updatedAt
+  }
+}
+mutation DeleteBooking(
+  $input: DeleteBookingInput!
+  $condition: ModelBookingConditionInput
+) {
+  deleteBooking(input: $input, condition: $condition) {
+    id
+    firstName
+    lastName
+    flight {
+      id
+      airline
+      flightNumber
+      departureAirportCode
+      arrivalAirportCode
+      price
+      bookings {
+        id
+        firstName
+        lastName
+        flightId
+        createdAt
+        updatedAt
+      }
+      createdAt
+      updatedAt
+    }
+    flightId
+    createdAt
+    updatedAt
+  }
+}

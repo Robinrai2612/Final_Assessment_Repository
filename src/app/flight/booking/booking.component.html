@@ -1,0 +1,40 @@
+<div class="container">
+  <form
+    autocomplete="off"
+    [formGroup]="createForm"
+    (ngSubmit)="onCreate(createForm.value)"
+  >
+    <div>
+      <label>Airline Name: </label>
+      <input type="text" formControlName="airline" autocomplete="off" />
+    </div>
+    <div>
+      <label>Flight Number</label>
+      <input type="text" formControlName="flightNumber" autocomplete="off" />
+    </div>
+    <div>
+      <label>Departure AirportCode </label>
+      <input
+        type="text"
+        formControlName="departureAirportCode"
+        autocomplete="off"
+      />
+    </div>
+    <div>
+      <label>Arrival AirportCode </label>
+      <input
+        type="text"
+        formControlName="arrivalAirportCode"
+        autocomplete="off"
+      />
+    </div>
+    <div>
+      <label>Price</label>
+      <input type="text" formControlName="price" autocomplete="off" />
+    </div>
+
+    <div class="mx-a">
+      <button class="btn btn-primary" value="Submit">Book</button>
+    </div>
+  </form>
+</div>

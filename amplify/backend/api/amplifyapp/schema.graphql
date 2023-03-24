@@ -1,0 +1,22 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+input AMPLIFY {
+  globalAuthRule: AuthRule = { allow: public }
+}
+type Flight @model @searchable {
+  id: ID
+  airline: String
+  flightNumber: String
+  departureAirportCode: String
+  arrivalAirportCode: String
+  price: Float!
+  bookings: [Booking]
+}
+
+type Booking @model {
+  id: ID
+  firstName: String
+  lastName: String
+  flight: Flight
+  flightId: ID
+}
